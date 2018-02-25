@@ -12,15 +12,15 @@
 #include <cmath>
 #include <algorithm>
 
-#include "a.h"
+#include ".h"
 
 int main() {
-	int TEST_NUMBER = 1;
-	std::string PROBLEM_NAME = "PROBE";
-	std::string PROBLEM_DIR = "PROBE";
+	int TEST_NUMBER = ;
+	std::string PROBLEM_NAME = "";
+	std::string PROBLEM_DIR = "datasets\\";
 	for (int i = 0; i < TEST_NUMBER; i++) {
 		std::stringstream number;
 		number << std::setfill('0') << std::setw(2) << i;
-		solve(PROBLEM_NAME + number.str());
+		solve(PROBLEM_DIR + '\\' + PROBLEM_NAME + number.str());
 	}
 }
